@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback</title>
+    <link rel="stylesheet" href="styles/navbar.css" />
+</head>
+<body>
+    <div class="topnav">
+        <a class="active" href="index.html">Home</a>
+        <div class="dropdown">
+          <button class="dropbtn">
+            Destinations
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content">
+            <a href="Alaska.html">Alaska</a>
+            <a href="California.html">California</a>
+            <a href="Canada.html">Canada</a>
+            <a href="China.html">China</a>
+            <a href="Connecticut.html">Connecticut</a>
+            <a href="Indiana.html">Indiana</a>
+            <a href="NewHampshire.html">New Hampshire</a>
+            <a href="NewYork.html">New York</a>
+            <a href="Massachusetts.html">Massachusetts</a>
+            <a href="Mexico.html">Mexico</a>
+            <a href="RhodeIsland.html">Rhode Island</a>
+          </div>
+        </div>
+        <a href="sitemap.html">Sitemap</a>
+        <a href="about.html">About the author</a>
+        <a href="contact.html">Contact</a>
+      </div>
+  
+      <form action="" method="post">
+        <fieldset class="information">
+          <legend>Your information:</legend>
+          <div>
+            <label for="name">Name:</label>
+            <input
+              id="name"
+              type="text"
+              name="name"
+              maxlength="100"
+              placeholder="Enter your name here"
+            />
+          </div>
+          <div>
+            <label for="email">Email:</label>
+            <input
+              id="email"
+              type="email"
+              name="email"
+              maxlength="100"
+              placeholder="Enter your email here"
+            />
+          </div>
+        </fieldset>
+  
+        <fieldset class="review">
+          <legend>Your Review:</legend>
+          <div>
+                <label for="locaton"> Which of these locations have you been to? </label>
+                <input type="checkbox" id="Alaska" name="Alaska" value="Alaska">
+                <label for="Alaska"> Alaska</label>
+                <input type="checkbox" id="California" name="California" value="California">
+                <label for="California"> California</label>
+                <input type="checkbox" id="Canada" name="Canada" value="Canada">
+                <label for="Canada"> Canada</label>
+                <input type="checkbox" id="China" name="China" value="China">
+                <label for="China"> China</label>
+                <input type="checkbox" id="Connecticut" name="Connecticut" value="Connecticut">
+                <label for="Connecticut"> Connecticut</label>
+                <input type="checkbox" id="Indiana" name="Indiana" value="Indiana">
+                <label for="Indiana"> Indiana</label>
+                <input type="checkbox" id="New Hampshire" name="New Hampshire" value="New Hampshire">
+                <label for="New Hampshire"> New Hampshire</label>
+                <input type="checkbox" id="New York" name="New York" value="New York">
+                <label for="New York"> New York</label>
+                <input type="checkbox" id="Massachusetts" name="Massachusetts" value="Massachusetts">
+                <label for="Massachusetts"> Massachusetts</label>
+                <input type="checkbox" id="Mexico" name="Mexico" value="Mexico">
+                <label for="Mexico"> Mexico</label>
+                <input type="checkbox" id="Rhode Island" name="Rhode Island" value="Rhode Island">
+                <label for="Rhode Island"> Rhode Island</label>
+          </div>
+
+          <div>
+            <label for="comment"> Comments about the location: </label>
+            <br />
+            <textarea name="comment" id="comment" cols="50" rows="5"></textarea>
+          </div>
+  
+          <input id="submit" type="submit" value="Submit" />
+          <input type="reset" value="Reset" />
+        </fieldset>
+      </form>
+      <script>
+        function validateForm() {
+          let x = document.getElementById("name").value;
+          let y = document.getElementById("email").value;
+          if (x == "" || y=="") {
+            alert("Name and email must be filled out");
+          return false;
+            }
+        }
+        document.getElementById("submit").onclick=function(event){
+              event.preventDefault();
+              validateForm();
+          }
+          </script>
+</body>
+</html>
