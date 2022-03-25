@@ -1,16 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sitemap</title>
     <link rel="stylesheet" href="styles/navbar.css" />
-</head>
-<body>
-
+  </head>
+  <style>
+    table {
+      border: 1px solid #cb997e;
+      width: 90%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    td {
+      border: 1px solid #cb997e;
+      text-align: center;
+      padding-top: 1%;
+      padding-bottom: 1%;
+    }
+    th {
+      border: 1px solid #cb997e;
+      color: #3f4238;
+    }
+    body {
+      background-color: white;
+    }
+    caption {
+      text-align: left;
+    }
+    h1 {
+      text-align: center;
+      color: #3f4238;
+    }
+    #number {
+      width: 10%;
+    }
+    #name {
+      width: 15%;
+    }
+    #description {
+      width: 60%;
+    }
+    .border {
+      background: #cb997e;
+      text-decoration: none;
+      border: 1px solid #6b705c;
+      padding-top: 1%;
+      padding-bottom: 1%;
+      padding-left: 1%;
+      padding-right: 1%;
+      color: #3f4238;
+      border-radius: 1%;
+    }
+  </style>
+  <body>
     <div class="topnav">
-      <a class="active" href="index.html">Home</a>
+      <img id="navbar-icon" src="Images/favicon-32x32.png" class="icon" />
+      <a class="active bar" href="index.html">Home</a>
       <div class="dropdown">
         <button class="dropbtn">
           Destinations
@@ -19,40 +67,95 @@
         <div class="dropdown-content">
           <a href="Alaska.html">Alaska</a>
           <a href="California.html">California</a>
-          <a href="Canada.html">Canada</a>
-          <a href="China.html">China</a>
-          <a href="Connecticut.html">Connecticut</a>
-          <a href="Indiana.html">Indiana</a>
-          <a href="NewHampshire.html">New Hampshire</a>
-          <a href="NewYork.html">New York</a>
+          <a href="Connecticut.html">Vermont</a>
           <a href="Massachusetts.html">Massachusetts</a>
           <a href="Mexico.html">Mexico</a>
-          <a href="RhodeIsland.html">Rhode Island</a>
         </div>
       </div>
-      <a href="sitemap.html">Sitemap</a>
-      <a href="about.html">About the author</a>
-      <a href="contact.html">Contact</a>
+      <a class="bar" href="sitemap.html">Sitemap</a>
+      <a class="bar" href="about.html">About the author</a>
+      <a class="bar" href="contact.html">Contact</a>
     </div>
 
     <h1>Sitemap</h1>
-    <hr />
 
-    <ol type="I">
-      <li><a href="Ex01.html">Exercise 01</a></li>
-      <li><a href="index.html">Exercise 03</a></li>
-      <li><a href="Ex04.html">Exercise 04</a></li>
-      <li><a href="Ex05.html">Exercise 05</a></li>
-      <li><a href="Ex06.html">Exercise 06</a></li>
-      <li><a href="ex07-1.html">Exercise 07-1</a></li>
-      <li><a href="ex07-2.html">Exercise 07-2</a></li>
-      <li><a href="ex08-1.html">Exercise 08-1</a></li>
-      <li><a href="ex08-2.html">Exercise 08-2</a></li>
-      <li><a href="ex09.html">Exercise 09</a></li>
-      <li><a href="hw2-1.html">hw2-1</a></li>
-      <li><a href="hw2-2.html">hw2-2</a></li>
-      <li><a href="hw2-bbc.html">hw2-bbc</a></li>
-    </ol>
-    <div style="border-top: 1px solid #70587c"></div>
-</body>
+    <table>
+      <tr>
+        <th id="number">Number</th>
+        <th id="name">Page Name</th>
+        <th id="description">Description</th>
+      </tr>
+      <tr>
+        <td>1</td>
+        <td>
+          <a class="border" href="index.html" target="_blank">Homepage</a>
+        </td>
+        <td>The homepage that provides an overview of the website.</td>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td><a class="border" href="Alaska.html" target="_blank">Alaska</a></td>
+        <td>
+          A page dedicated to exploring Anchorage, McKinley Chalet Resort,
+          Denali National Park & Reserve, Glacier Bay, Tarr Inlet, Portage Cove
+          Campground, Haines, Skagway, and Juneau in Alaska.
+        </td>
+      </tr>
+      <tr>
+        <td>3</td>
+        <td>California</td>
+        <td>
+          A page dedicated to exploring San Diego, San Francisco, and Berkeley
+          in California.
+        </td>
+      </tr>
+      <tr>
+        <td>4</td>
+        <td>Vermont</td>
+        <td>
+          A page dedicated to exploring West Dover, Stratton, and Wilmington in
+          Vermont.
+        </td>
+      </tr>
+      <tr>
+        <td>5</td>
+        <td>Massachusetts</td>
+        <td>
+          A page dedicated to exploring Lexington, Wellesley, Wachusett Mountain
+          State Reservation, and Boston in Massachusetts.
+        </td>
+      </tr>
+      <tr>
+        <td>6</td>
+        <td>Mexico</td>
+        <td>
+          A page dedicated to exploring Cancun, Chichen Itza, Cenote X'keken,
+          and Tulum in Mexico.
+        </td>
+      </tr>
+      <tr>
+        <td>7</td>
+        <td>Sitemap</td>
+        <td>
+          A page to identify and locate all the available pages on the website.
+        </td>
+      </tr>
+      <tr>
+        <td>8</td>
+        <td>About the author</td>
+        <td>
+          A page dedicated to learning more about the author of the website,
+          Jennifer Lo.
+        </td>
+      </tr>
+      <tr>
+        <td>9</td>
+        <td>Contact</td>
+        <td>
+          A page with a form where you can provide feedback on the website and
+          contact the author.
+        </td>
+      </tr>
+    </table>
+  </body>
 </html>

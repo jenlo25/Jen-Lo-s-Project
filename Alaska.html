@@ -1,22 +1,148 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Alaska</title>
-</head>
-<body>
-    <h1> Alaska </h1>
+    <link rel="stylesheet" href="styles/navbar.css" />
+  </head>
+  <style>
+    table {
+      border: 1px solid #cb997e;
+      width: 50%;
+      margin-left: 3%;
+    }
+    td {
+      border: 1px solid #cb997e;
+      text-align: center;
+    }
+    th {
+      border: 1px solid #cb997e;
+    }
+    body {
+      background-color: white;
+    }
+    caption {
+      text-align: left;
+    }
+    h1 {
+      text-align: center;
+    }
+    .al-pics {
+      height: 10%;
+      width: 10%;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      padding-bottom: 3%;
+    }
+    p {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    #anchorage {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  </style>
+  <body>
+    <div class="topnav">
+      <img id="navbar-icon" src="Images/favicon-32x32.png" class="icon" />
+      <a class="active bar" href="index.html">Home</a>
+      <div class="dropdown">
+        <button class="dropbtn">
+          Destinations
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+          <a href="Alaska.html">Alaska</a>
+          <a href="California.html">California</a>
+          <a href="Connecticut.html">Vermont</a>
+          <a href="Massachusetts.html">Massachusetts</a>
+          <a href="Mexico.html">Mexico</a>
+        </div>
+      </div>
+      <a class="bar" href="sitemap.html">Sitemap</a>
+      <a class="bar" href="about.html">About the author</a>
+      <a class="bar" href="contact.html">Contact</a>
+    </div>
 
-<h2>Anchorage, Alaska</h2>
-    McKinley Chalet Resort
-    Denali National Park & Preserve 
-    Glacier Bay
-    Tarr Inlet
-    Portage Cove
-    Haines
-    Skagway
-    Juneau
-</body>
+    <h1>Alaska</h1>
+
+    <table>
+      <caption>
+        Locations in Alaska
+      </caption>
+      <tr>
+        <th>Number</th>
+        <th>Location Name</th>
+        <th>Location Highlight</th>
+      </tr>
+      <tr>
+        <td>1</td>
+        <td>Anchorage</td>
+        <td>x</td>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td>McKinley Chalet Resort</td>
+        <td>x</td>
+      </tr>
+      <tr>
+        <td>3</td>
+        <td>Denali National Park & Preserve</td>
+        <td>x</td>
+      </tr>
+      <tr>
+        <td>4</td>
+        <td>Glacier Bay</td>
+        <td>x</td>
+      </tr>
+      <tr>
+        <td>5</td>
+        <td>Tarr Inlet</td>
+        <td>x</td>
+      </tr>
+      <tr>
+        <td>6</td>
+        <td>Portage Cove Campground</td>
+        <td>x</td>
+      </tr>
+      <tr>
+        <td>7</td>
+        <td>Haines</td>
+        <td>x</td>
+      </tr>
+      <tr>
+        <td>8</td>
+        <td>Skagway</td>
+        <td>x</td>
+      </tr>
+      <tr>
+        <td>9</td>
+        <td>Juneau</td>
+        <td>x</td>
+      </tr>
+    </table>
+    <h2>Anchorage, Alaska</h2>
+    <p>When I went to Anchorage, Alaska one of</p>
+
+    <img
+      class="al-pics"
+      src="Images/anchorage.jpg"
+      alt="anchorage food Image"
+      title="anchorage food Image"
+    />
+
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3523.059120873793!2d-149.89818806915!3d61.21881423935341!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x56c8bd8731c7b5ed%3A0x6664048febe05375!2sGlacier%20Brewhouse!5e0!3m2!1sen!2sus!4v1648188604591!5m2!1sen!2sus"
+      id = "anchorage"
+      width="500"
+      height="350"
+    ></iframe>
+
+  </body>
 </html>

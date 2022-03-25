@@ -7,9 +7,39 @@
     <title>About Jen Lo</title>
     <link rel="stylesheet" href="styles/navbar.css" />
   </head>
+  <style>
+    p {
+      margin-left: 5%;
+      margin-right: 25%;
+      font-size: 20px;
+    }
+    #jen {
+      float: right;
+      text-align: center;
+      font-style: italic;
+      font-size: smaller;
+      text-indent: 0;
+      border: 2px #ffe8d6 solid;
+      margin: 0.5em;
+      padding: 0.5em;
+      display: table;
+    }
+    #caption {
+      position: absolute;
+      bottom: 28%;
+      right: 3%;
+      font-style: italic;
+      text-indent: 0;
+      border: 2px #ffe8d6 solid;
+    }
+    h1 {
+      margin-left: 35%;
+    }
+  </style>
   <body>
     <div class="topnav">
-      <a class="active" href="index.html">Home</a>
+      <img id="navbar-icon" src="Images/favicon-32x32.png" class="icon" />
+      <a class="active bar" href="index.html">Home</a>
       <div class="dropdown">
         <button class="dropbtn">
           Destinations
@@ -18,34 +48,56 @@
         <div class="dropdown-content">
           <a href="Alaska.html">Alaska</a>
           <a href="California.html">California</a>
-          <a href="Canada.html">Canada</a>
-          <a href="China.html">China</a>
-          <a href="Connecticut.html">Connecticut</a>
-          <a href="Indiana.html">Indiana</a>
-          <a href="NewHampshire.html">New Hampshire</a>
-          <a href="NewYork.html">New York</a>
+          <a href="Connecticut.html">Vermont</a>
           <a href="Massachusetts.html">Massachusetts</a>
           <a href="Mexico.html">Mexico</a>
-          <a href="RhodeIsland.html">Rhode Island</a>
         </div>
       </div>
-      <a href="sitemap.html">Sitemap</a>
-      <a href="about.html">About the author</a>
-      <a href="contact.html">Contact</a>
+      <a class="bar" href="sitemap.html">Sitemap</a>
+      <a class="bar" href="about.html">About the author</a>
+      <a class="bar" href="contact.html">Contact</a>
     </div>
-    
+
     <h1>About Jen Lo</h1>
     <hr />
-    <img
-      src="Images/jen.JPG"
-      alt="Jen's Picture"
-      height="300"
-      title="Jen's Picture"
-    />
+    <figure>
+      <img
+        src="Images/jen.JPG"
+        alt="Jen's Picture"
+        id="jen"
+        height="300"
+        title="Jen's Picture"
+      />
+      <figcaption id="caption">Jen in California!</figcaption>
+    </figure>
 
-    I am graduating in May 2022 and I will be going into the analytics field at
-    State Street which is a financial services and banking institution.
-
-    <p>My favorite sport is <strong>badminton.</strong></p>
+    <p>
+      My name is Jennifer Lo, but I go by Jen. I am currently a senior at Babson
+      College studying Business Analytics. After graduation in May 2022, I will
+      be joining a rotational program at State Street in Boston, MA. I have
+      created this website to provide relevant travel information to other
+      people. I hope that some parts of this website are helpful for you as you
+      plan your next travel adventure!
+    </p>
   </body>
+  <script>
+    function over() {
+      Img = document.getElementById("jen");
+      Img.src = "Images/IMG_5609.jpg";
+      document.getElementById("caption").innerText = "Jen in Massachusetts!";
+    }
+    document.getElementById("jen").onmouseover = function () {
+      over();
+    };
+
+    function out() {
+      Img2 = document.getElementById("jen");
+      Img2.src = "Images/jen.jpg";
+      document.getElementById("caption").innerText = "Jen in California!";
+    }
+
+    document.getElementById("jen").onmouseout = function () {
+      out();
+    };
+  </script>
 </html>

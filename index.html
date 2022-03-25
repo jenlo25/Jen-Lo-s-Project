@@ -1,17 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="author" content="Jennifer Lo" />
+    <meta
+      name="description"
+      content="This website covers destinations visited."
+    />
+    <meta name="keywords" content="travel,food,images,locations" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Index</title>
 
     <link rel="stylesheet" href="styles/navbar.css" />
+    <link rel="stylesheet" href="styles/home.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
   </head>
 
   <body>
     <div class="topnav">
-      <a class="active" href="index.html">Home</a>
+      <img id="navbar-icon" src="Images/favicon-32x32.png" class="icon" />
+      <a class="active bar" href="index.html">Home</a>
       <div class="dropdown">
         <button class="dropbtn">
           Destinations
@@ -20,22 +30,109 @@
         <div class="dropdown-content">
           <a href="Alaska.html">Alaska</a>
           <a href="California.html">California</a>
-          <a href="Canada.html">Canada</a>
-          <a href="China.html">China</a>
-          <a href="Connecticut.html">Connecticut</a>
-          <a href="Indiana.html">Indiana</a>
-          <a href="NewHampshire.html">New Hampshire</a>
-          <a href="NewYork.html">New York</a>
+          <a href="Connecticut.html">Vermont</a>
           <a href="Massachusetts.html">Massachusetts</a>
           <a href="Mexico.html">Mexico</a>
-          <a href="RhodeIsland.html">Rhode Island</a>
         </div>
       </div>
-      <a href="sitemap.html">Sitemap</a>
-      <a href="about.html">About the author</a>
-      <a href="contact.html">Contact</a>
+      <a class="bar" href="sitemap.html">Sitemap</a>
+      <a class="bar" href="about.html">About the author</a>
+      <a class="bar" href="contact.html">Contact</a>
     </div>
 
-    <h1>test</h1>
+    <!-- Slideshow container -->
+    <div class="slideshow-container">
+      <!-- Full-width images with caption text -->
+
+      <div class="mySlides fade">
+        <img
+          class="moving"
+          src="Images/ma.jpg"
+          alt="MA Image"
+          title="MA Image"
+        />
+        <div class="text">Massachusetts</div>
+      </div>
+
+      <div class="mySlides fade">
+        <img
+          class="moving"
+          src="Images/cancun.jpg"
+          alt="Cancun Image"
+          title="Cancun Image"
+        />
+        <div class="text">Mexico</div>
+      </div>
+
+      <div class="mySlides fade">
+        <img
+          class="moving"
+          src="Images/alaska.jpg"
+          alt="Alaska Image"
+          title="Alaska Image"
+        />
+        <div class="text">Alaska</div>
+      </div>
+
+      <div class="mySlides fade">
+        <img
+          class="moving"
+          src="Images/cali.jpg"
+          alt="Cali Image"
+          title="Cali Image"
+        />
+        <div class="text">California</div>
+      </div>
+
+      <div class="mySlides fade">
+        <img
+          class="moving"
+          src="Images/vermont.jpg"
+          alt="Vermont Image"
+          title="Vermont Image"
+        />
+        <div class="text">Vermont</div>
+      </div>
+    </div>
+
+    <!-- The dots/circles -->
+    <div>
+      <span class="dot" onclick="currentSlide(1)"></span>
+      <span class="dot" onclick="currentSlide(2)"></span>
+      <span class="dot" onclick="currentSlide(3)"></span>
+      <span class="dot" onclick="currentSlide(4)"></span>
+    </div>
+
+    <h2>Jen Lo's Travel website</h2>
+    <p>
+      This website is about my personal experience traveling to Alaska,
+      California, Vermont, Massachusetts, and Mexico. I will be providing
+      information on these places such as must see sites, food recommendations,
+      and images! Please feel free to explore the pages and let me know what you
+      think!
+    </p>
+    <script>
+      var slideIndex = 0;
+      showSlides();
+
+      function showSlides() {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("dot");
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+        }
+        slideIndex++;
+        if (slideIndex > slides.length) {
+          slideIndex = 1;
+        }
+        for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex - 1].style.display = "block";
+        dots[slideIndex - 1].className += " active";
+        setTimeout(showSlides, 6000); // Change image every 6 seconds
+      }
+    </script>
   </body>
 </html>
