@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -10,40 +9,34 @@
   </head>
   <style>
     table {
-      border: 1px solid #cb997e;
+      border-collapse: collapse;
       width: 50%;
-      margin-left: 20%;
-      margin-right: 20%;
+      margin: auto;
     }
     td {
-      border: 1px solid #cb997e;
-      text-align: center;
+      border: 1px solid;
     }
     th {
-      border: 1px solid #cb997e;
+      border: 2px solid;
+      color: #9b9b7a;
     }
     body {
       background-color: white;
     }
-    caption {
-      text-align: left;
-    }
     h1 {
       text-align: center;
+      color: #9b9b7a;
     }
     h2 {
       text-align: center;
     }
     .al-pics {
       height: 10%;
-      width: 10%;
-      display: flex;
-      margin: auto;
       width: 20%;
-      padding-bottom: 3%;
+      float: right;
+      margin-right: 2%;
     }
     p {
-      display: block;
       margin-left: 20%;
       margin-right: 20%;
     }
@@ -52,6 +45,16 @@
       margin-left: auto;
       margin-right: auto;
     }
+    .items{
+text-align:center;
+margin:50px auto;}
+
+
+.items figure{
+margin:0px 20px;
+display:inline-block;
+text-decoration:none;
+color:black;}
   </style>
   <body>
     <div class="topnav">
@@ -65,7 +68,7 @@
         <div class="dropdown-content">
           <a href="Alaska.html">Alaska</a>
           <a href="California.html">California</a>
-          <a href="Connecticut.html">Vermont</a>
+          <a href="Vermont.html">Vermont</a>
           <a href="Massachusetts.html">Massachusetts</a>
           <a href="Mexico.html">Mexico</a>
         </div>
@@ -74,13 +77,9 @@
       <a class="bar" href="about.html">About the author</a>
       <a class="bar" href="contact.html">Contact</a>
     </div>
-
     <h1>Alaska</h1>
 
     <table>
-      <caption>
-        Locations in Alaska
-      </caption>
       <tr>
         <th>Number</th>
         <th>Location Name</th>
@@ -89,47 +88,17 @@
       <tr>
         <td>1</td>
         <td>Anchorage</td>
-        <td>x</td>
+        <td>The amazing seafood!</td>
       </tr>
       <tr>
         <td>2</td>
-        <td>McKinley Chalet Resort</td>
-        <td>x</td>
+        <td>Denali National Park & Preserve</td>
+        <td>The view and wildlife you can see from the mountain!</td>
       </tr>
       <tr>
         <td>3</td>
-        <td>Denali National Park & Preserve</td>
-        <td>x</td>
-      </tr>
-      <tr>
-        <td>4</td>
         <td>Glacier Bay</td>
-        <td>x</td>
-      </tr>
-      <tr>
-        <td>5</td>
-        <td>Tarr Inlet</td>
-        <td>x</td>
-      </tr>
-      <tr>
-        <td>6</td>
-        <td>Portage Cove Campground</td>
-        <td>x</td>
-      </tr>
-      <tr>
-        <td>7</td>
-        <td>Haines</td>
-        <td>x</td>
-      </tr>
-      <tr>
-        <td>8</td>
-        <td>Skagway</td>
-        <td>x</td>
-      </tr>
-      <tr>
-        <td>9</td>
-        <td>Juneau</td>
-        <td>x</td>
+        <td>The beautiful glacier formations!</td>
       </tr>
     </table>
     <h2>Anchorage, Alaska</h2>
@@ -143,58 +112,14 @@
       location in Anchorage, Alaska.
     </p>
 
-    <img
-      class="al-pics"
-      src="Images/anchorage.jpg"
-      alt="anchorage food Image"
-      title="anchorage food Image"
-    />
-    <img
-      class="al-pics"
-      src="Images/anchorage2.jpg"
-      alt="anchorage Image"
-      title="anchorage Image"
-    />
-
-    <iframe
-      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3523.059120873793!2d-149.89818806915!3d61.21881423935341!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x56c8bd8731c7b5ed%3A0x6664048febe05375!2sGlacier%20Brewhouse!5e0!3m2!1sen!2sus!4v1648188604591!5m2!1sen!2sus"
-      id="anchorage"
-      width="500"
-      height="350"
-    ></iframe>
-
-    <p>
-      Denali National Park & Reserve is one of the most popular tourist
-      destinations. Denali is one of the tallest mountains in the world and on a
-      non-foggy day the park has a spectacular view of the peak of the mountain.
-      At the national park, visitors have the opportunity to sightsee in their
-      buses. They take visitors along the base of the mountain which provides
-      ample chances to take pictures of the wildlife such as bears and mouse.
-      While up along the mountain you can see specks of white which are actually
-      the mountain goats! If you go into the parks base you can get the chance
-      to take pictures with husky dogs which have been trained for dog sledding.
-      They have various shows throughout the day to showcase the sled routine.
-    </p>
-
-
-    <img
-    class="al-pics"
-    src="Images/IMG_7007.jpg"
-    alt="Denali Image"
-    title="denali Image"
-  />
-  <img
-    class="al-pics"
-    src="Images/IMG_7060.jpg"
-    alt="husky Image"
-    title="husky Image"
-  />
-
-    <p>
-      While in Alaska, one of the great sights to see are the glaciers! At
-      Glacier Bay, you get the chance to see some of the larger remnants of the
-      glaciers, however, as global warming has impacted the environment it is
-      noticeable how much smaller the glacier is compared to historical images.
-    </p>
+    <div class="items">
+      <figure>
+          <img src="Images/anchorage.jpg" width="100px" height="100px">
+          <figcaption>Caption 1</figcaption>
+      </figure>
+      <figure>
+          <img src="Images/anchorage2.jpg" width="100px" height="100px"> 
+          <figcaption>Caption 2</figcaption>
+      </figure></div>
   </body>
 </html>

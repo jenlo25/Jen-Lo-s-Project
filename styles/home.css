@@ -1,20 +1,45 @@
-p{
-  display:block;
+p {
+  display: block;
   padding-left: 5%;
   padding-right: 5%;
   font-size: 15pt;
 }
 
+.fa-solid {
+  font-size: 3em;
+  --fa-beat-scale: 1.2;
+  --fa-animation-duration: 5s;
+}
 
 h2 {
   text-align: left;
   padding-top: 3%;
   padding-left: 5%;
-  color:#6B705C;
+  color: #6b705c;
   font-size: 25pt;
 }
 * {
   box-sizing: border-box;
+text-decoration: none;
+}
+
+.items {
+  text-align: center;
+  margin: auto;
+}
+
+.items figure {
+  display: inline-block;
+  text-decoration: none;
+  color: black;
+  font-size: 12pt;
+  margin: auto;
+}
+
+figcaption {
+  padding-top: 1em;
+  padding-right: 2em;
+  padding-left: 2em; 
 }
 
 /* Slideshow container */
@@ -35,7 +60,7 @@ h2 {
 
 .moving {
   width: 100%;
-  background-size: cover; 
+  background-size: cover;
   height: 100%;
   object-fit: cover;
 }
