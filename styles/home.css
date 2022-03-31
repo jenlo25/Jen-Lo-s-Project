@@ -9,13 +9,14 @@ p {
   font-size: 3em;
   --fa-beat-scale: 1.2;
   --fa-animation-duration: 5s;
+  color: #cb997e;
 }
 
 h2 {
   text-align: left;
   padding-top: 3%;
   padding-left: 5%;
-  color: #6b705c;
+  color: #cb997e;
   font-size: 25pt;
 }
 * {
