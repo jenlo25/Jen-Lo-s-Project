@@ -39,7 +39,7 @@ body {
   font-size: 16px;
   border: none;
   outline: none;
-  color: white;
+  color: #FFEEE0;
   padding-top: 20px;
   padding-bottom: 20px;
   padding-left: 30px;
@@ -83,4 +83,22 @@ body {
 
 .dropdown:hover .dropdown-content {
   display: block;
+}
+
+a:hover {
+  color: #FFE8D6;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:link {
+  color: #FFE8D6;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:visited {
+  color: #FFEEE0;
+  background-color: transparent;
+  text-decoration: none;
 }
