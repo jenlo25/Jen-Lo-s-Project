@@ -32,7 +32,6 @@
         <a href="Alaska.html">Alaska</a>
         <a href="California.html">California</a>
         <a href="Connecticut.html">Vermont</a>
-        <a href="Massachusetts.html">Massachusetts</a>
         <a href="Mexico.html">Mexico</a>
       </div>
     </div>
@@ -76,22 +75,29 @@
                 <label for="California"> California</label>
                 <input type="checkbox" id="Vermont" name="Vermont" value="Vermont">
                 <label for="Vermont"> Vermont</label>
-                <input type="checkbox" id="Massachusetts" name="Massachusetts" value="Massachusetts">
-                <label for="Massachusetts"> Massachusetts</label>
                 <input type="checkbox" id="Mexico" name="Mexico" value="Mexico">
                 <label for="Mexico"> Mexico</label>
           </div>
-
           <div>
             <label for="comment"> Comments about the location: </label>
             <br />
             <textarea name="comment" id="comment" cols="50" rows="5"></textarea>
           </div>
-  
+          <p>
+            <label>
+              <input
+                type="checkbox"
+                checked="checked"
+                name="subscribe"
+              
+              />Subscribe to join our mailing list!
+            </label>
+          </p>
           <input id="submit" type="submit" value="Submit" />
           <input type="reset" value="Reset" />
         </fieldset>
       </form>
+
       <script>
         function validateForm() {
           let x = document.getElementById("name").value;
